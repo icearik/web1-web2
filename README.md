@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Information About The Final project
+
+<b>Name:</b> Ilyar Aisarov<br><br>
+<b>Assignment:</b>  Laravel Final Project<br><br>
+<b>State Of the Assignment: </b>Works as expected. All functions from th writeUp are implemented<br><br>
+<b>Issues I wish I had more time to improve:</b> I wish I started the assignment earlier. I still think my Lambda function implementations are not really efficient and could be improved. I also wish I had more time to work on caching. I wanted to do in lambda's side but ended up caching weather data locally<br><br>
+Some of the things worth noting:
+- I created a custom Middleware to check for authentication token in the api routes, which makes adding more routes simpler and faster
+- I think I did a good job with error handling, making sure the messages are understandable and don't reveal too much Information
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
