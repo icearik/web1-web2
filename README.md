@@ -16,7 +16,7 @@
 Some of the things worth noting:
 - I created a custom Middleware to check for authentication token in the api routes, which makes adding more routes simpler and faster
 - I think I did a good job with error handling, making sure the messages are understandable and don't reveal too much Information
-
+- I used Laravel Components to set up page layouts and avoid redundancy
 
 ## About Laravel
 
