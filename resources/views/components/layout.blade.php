@@ -46,7 +46,7 @@ if (Cache::has($zipcode)) {
                     'conditions' => 'invalid location'
                 ];
 	    } else {
-		echo "<script>console.log('{{$response->getBody()->getContents()}}');</script>";
+		echo "<script>alert('{{$response->getBody()->getContents()}}');</script>";
                 $weatherData = (object) [
                     'temperature' => 'Server Error',
                     'conditions' => 'Server Error'
