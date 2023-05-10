@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\NumbersController;
 use Illuminate\Support\Str;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Cache;
 
 /*
  * Ilyar Aisarov Final Project
@@ -73,6 +74,7 @@ Route::middleware(['cas.auth'])->group(function() {
   });
   Route::get('/logout', function () {
 	  session()->invalidate();
+	  Cache::flush();
 	  cas()->logout();
         return redirect('/');
   });

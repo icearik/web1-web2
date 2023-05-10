@@ -130,7 +130,7 @@ return [
     | page in which the call was initiated.  You can override this method
     | and force the user to be redirected to a specific URL here.
     */
-    'cas_redirect_path' => env('CAS_REDIRECT_PATH', 'https://aisaroi.aws.csi.miamioh.edu/L_final/public/'),
+    'cas_redirect_path' => env('CAS_REDIRECT_PATH', 'https://aisaroi.aws.csi.miamioh.edu/cse451-aisaroi-web/L_final/public/'),
 
     /*
     |--------------------------------------------------------------------------

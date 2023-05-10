@@ -37,7 +37,7 @@ $(document).ready(function () {
                 getCalls();
             },
             error: function (xhr, status, error) {
-                alert(xhr.responseJSON.message);
+                alert(xhr.responseText);
             }
         });
 
