@@ -81,7 +81,7 @@ $conds = $weatherData->conditions;
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 	<style>
-.center{margin: auto;  
+.center{margin: auto;
 width: 50%;
   padding: 0 10px;
   text-align:center;

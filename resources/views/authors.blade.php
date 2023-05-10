@@ -12,29 +12,29 @@
         <div id="results"></div>
     </div>
     <script>
-        $(document).ready(function() {
-            $('#author').submit(function(e) {
-                e.preventDefault(); 
+        $(document).ready(function () {
+            $('#author').submit(function (e) {
+                e.preventDefault();
                 var authorName = $('#author-input').val();
                 $.ajax({
                     url: "{{url('/api/author')}}",
-		    method: 'GET',
-		    headers: {
-			"X-AUTH-FINAL-TOKEN": "{{ session('authKey') }}"
-		    },
+                    method: 'GET',
+                    headers: {
+                        "X-AUTH-FINAL-TOKEN": "{{ session('authKey') }}"
+                    },
                     data: { name: authorName },
-                    success: function(response) {
+                    success: function (response) {
                         // handle successful API call
-			    var authors = JSON.parse(response);
-			var output = '<ul>';
+                        var authors = JSON.parse(response);
+                        var output = '<ul>';
                         for (var i = 0; i < authors.docs.length; i++) {
-				var link = "{{url('/authors/{key}')}}".replace('{key}', authors.docs[i].key);
-				output += '<li><a href="' + link + '">' + authors.docs[i].name + '</a></li>';
+                            var link = "{{url('/authors/{key}')}}".replace('{key}', authors.docs[i].key);
+                            output += '<li><a href="' + link + '">' + authors.docs[i].name + '</a></li>';
                         }
                         output += '</ul>';
                         $('#results').html(output);
                     },
-                    error: function(xhr) {
+                    error: function (xhr) {
                         // handle API call error
                         $('#results').html('<p>Error: ' + xhr.statusText + '</p>');
                     }
