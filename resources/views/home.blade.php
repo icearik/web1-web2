@@ -1,4 +1,4 @@
-<x-layout>
+<x-h-layout>
 <h2>Welcome, {{cas()->user()}}</h2>
 <p><a href={{url('/profile')}}>/profile</a></p>
 <p><a href={{url('/numbers')}}>/numbers</a></p>
@@ -18,4 +18,4 @@
         });
     });
 </script>
-</x-layout>
+</x-h-layout>
